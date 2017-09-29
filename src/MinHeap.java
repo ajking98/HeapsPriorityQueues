@@ -30,19 +30,15 @@ public class MinHeap<T extends Comparable<? super T>>
     public void add(T item) {
         checkIllegalArgumentException(item);
 
-        if (size  == backingArray.length - 1) {
-            resizeBackingArray();
-        }
+        checkToResize();
 
         if (isEmpty()) {
-            backingArray[1] = item;
-            size++;
+            addToFront(item);
         } else {
             int index = size + 1;
             backingArray[index] = item;
             int top = index / 2;
-            while (top >= 1
-                    && backingArray[top].compareTo(item) > 0) {
+            while (top >= 1 && backingArray[top].compareTo(item) > 0) {
                 T temp = backingArray[top];
                 backingArray[top] = backingArray[index];
                 backingArray[index] = temp;
@@ -82,11 +78,7 @@ public class MinHeap<T extends Comparable<? super T>>
     @Override
     public T remove() {
         checkNoSuchElementException();
-
-        T returnVar = backingArray[1];
-        backingArray[1] = backingArray[size];
-        backingArray[size] = null;
-        size--;
+        T returnVar = intialStepsBeforeRemove();
         int top = 1;
         boolean swap = true;
         int i = 0;
@@ -105,15 +97,12 @@ public class MinHeap<T extends Comparable<? super T>>
                     i = top * 2 + 1;
                 }
             }
-            if (backingArray[top].compareTo(backingArray[i])
-                    > 0) {
+            if (backingArray[top].compareTo(backingArray[i]) > 0) {
                 T temp = backingArray[top];
                 backingArray[top] = backingArray[i];
                 backingArray[i] = temp;
                 top = i;
                 swap = true;
-
-
             } else {
                 swap = false;
             }
@@ -169,8 +158,8 @@ public class MinHeap<T extends Comparable<? super T>>
     }
 
     /**
-     * 
-     * @param item
+     *
+     * @param item the item to check if it is null or not
      */
     private void checkIllegalArgumentException(T item) {
         if (item == null) {
@@ -178,9 +167,42 @@ public class MinHeap<T extends Comparable<? super T>>
         }
     }
 
+    /**
+     * throws a NoSuchElementException
+     */
     private void checkNoSuchElementException() {
         if (size == 0) {
             throw new NoSuchElementException("Heap is empty");
         }
+    }
+
+    /**
+     * neccesary steps before remove
+     * @return value to be removed
+     */
+    private T intialStepsBeforeRemove() {
+        T returnVar = backingArray[1];
+        backingArray[1] = backingArray[size];
+        backingArray[size] = null;
+        size--;
+        return returnVar;
+    }
+
+    /**
+     * check to resize
+     */
+    private void checkToResize() {
+        if (size  == backingArray.length - 1) {
+            resizeBackingArray();
+        }
+    }
+
+    /**
+     *
+     * @param item the data to be added to the front if array is empty
+     */
+    private void addToFront(T item) {
+        backingArray[1] = item;
+        size++;
     }
 }
