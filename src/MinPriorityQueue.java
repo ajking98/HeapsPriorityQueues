@@ -30,8 +30,8 @@ public class MinPriorityQueue<T extends Comparable<? super T>>
 
     @Override
     public T dequeue() {
-        T val = backingHeap.remove();
-        return val;
+        T remove = backingHeap.remove();
+        return remove;
     }
 
     @Override

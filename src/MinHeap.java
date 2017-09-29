@@ -29,50 +29,22 @@ public class MinHeap<T extends Comparable<? super T>>
     @Override
     public void add(T item) {
         checkIllegalArgumentException(item);
-
         checkToResize();
-
         if (isEmpty()) {
             addToFront(item);
         } else {
-            int index = size + 1;
-            backingArray[index] = item;
-            int top = index / 2;
+            int itemPos = size + 1;
+            backingArray[itemPos] = item;
+            int top = itemPos / 2;
             while (top >= 1 && backingArray[top].compareTo(item) > 0) {
                 T temp = backingArray[top];
-                backingArray[top] = backingArray[index];
-                backingArray[index] = temp;
-                index = top;
+                backingArray[top] = backingArray[itemPos];
+                backingArray[itemPos] = temp;
+                itemPos = top;
                 top = top / 2;
             }
             size++;
         }
-//        int itemPos = size;
-//        backingArray[itemPos] = item;
-//        for (int i = size / 2; i > 0; i = i / 2) {
-//            if (item.compareTo(backingArray[i]) > 0) {
-//                T obj = backingArray[i];
-//                backingArray[i] = item;
-//                backingArray[itemPos] = obj;
-//                itemPos = i;
-//            } else {
-//                i = 0;
-//            }
-//        }
-//        System.out.println(backingArray.length);
-//        size++;
-    }
-
-    /**
-     *
-     */
-    private void resizeBackingArray() {
-        T[] tempArr = (T[]) new Comparable[backingArray.length * 2];
-        for (int i = 1; i < backingArray.length; i++) {
-            tempArr[i] = backingArray[i];
-        }
-        backingArray = tempArr;
-
     }
 
     @Override
@@ -98,39 +70,13 @@ public class MinHeap<T extends Comparable<? super T>>
                 }
             }
             if (backingArray[top].compareTo(backingArray[i]) > 0) {
-                T temp = backingArray[top];
-                backingArray[top] = backingArray[i];
-                backingArray[i] = temp;
-                top = i;
+                top = getTop(top, i);
                 swap = true;
             } else {
                 swap = false;
             }
         }
         return returnVar;
-
-//        T obj = backingArray[1];
-//        backingArray[1] = backingArray[size - 1];
-//        backingArray[size - 1] = null;
-//        size--;
-//        int atLoc = 1;
-//        for (int i = 2; i < size; i = i * 2) {
-//            int biggerChild;
-//            if (backingArray[i + 1] != null) {
-//                biggerChild = backingArray[i].compareTo(backingArray[i + 1]) > 0 ? i : i + 1;
-//            } else {
-//                biggerChild = i;
-//            }
-//            if (backingArray[atLoc].compareTo(backingArray[biggerChild]) < 0) {
-//                T temp = backingArray[atLoc];
-//                backingArray[atLoc] = backingArray[biggerChild];
-//                backingArray[biggerChild] = temp;
-//                atLoc = biggerChild;
-//            } else {
-//                i = size;
-//            }
-//        }
-//        return obj;
     }
 
     @Override
@@ -204,5 +150,31 @@ public class MinHeap<T extends Comparable<? super T>>
     private void addToFront(T item) {
         backingArray[1] = item;
         size++;
+    }
+
+    /**
+     * if needed then the backingarray will regrow
+     */
+    private void resizeBackingArray() {
+        T[] newArr = (T[]) new Comparable[backingArray.length * 2];
+        for (int i = 1; i < backingArray.length; i++) {
+            newArr[i] = backingArray[i];
+        }
+        backingArray = newArr;
+
+    }
+
+    /**
+     *
+     * @param top the top int variable
+     * @param i the int i
+     * @return the top variable
+     */
+    private int getTop(int top, int i) {
+        T temp = backingArray[top];
+        backingArray[top] = backingArray[i];
+        backingArray[i] = temp;
+        top = i;
+        return top;
     }
 }

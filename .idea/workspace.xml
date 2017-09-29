@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c51e6006-1b8d-4975-ad1a-aa0a09321b72" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MinHeap.java" afterPath="$PROJECT_DIR$/src/MinHeap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MinPriorityQueue.java" afterPath="$PROJECT_DIR$/src/MinPriorityQueue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,18 +18,14 @@
       <file leaf-file-name="MinHeap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MinHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1261">
-              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="420">
+              <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding>
                 <element signature="docComment;class#MinHeap#0" expanded="true" />
                 <element signature="e#311#383#0" expanded="true" />
                 <element signature="docComment;method#MinHeap#0;class#MinHeap#0" expanded="true" />
                 <element signature="method#MinHeap#0;class#MinHeap#0" expanded="true" />
-                <element signature="e#1354#1383#0" expanded="true" />
-                <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-                <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-                <element signature="method#remove#0;class#MinHeap#0" expanded="true" />
-                <element signature="e#3197#3231#0" expanded="true" />
+                <element signature="method#add#0;class#MinHeap#0" expanded="true" />
                 <element signature="method#isEmpty#0;class#MinHeap#0" expanded="true" />
                 <element signature="method#size#0;class#MinHeap#0" expanded="true" />
                 <element signature="method#clear#0;class#MinHeap#0" expanded="true" />
@@ -43,7 +40,11 @@
                 <element signature="method#checkToResize#0;class#MinHeap#0" expanded="true" />
                 <element signature="docComment;method#addToFront#0;class#MinHeap#0" expanded="true" />
                 <element signature="method#addToFront#0;class#MinHeap#0" expanded="true" />
-                <marker date="1506705600329" expanded="true" signature="938:1343" ph="..." />
+                <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+                <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+                <element signature="docComment;method#getTop#0;class#MinHeap#0" expanded="true" />
+                <element signature="method#getTop#0;class#MinHeap#0" expanded="true" />
+                <marker date="1506719914729" expanded="true" signature="936:1353" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,13 +53,12 @@
       <file leaf-file-name="MinPriorityQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MinPriorityQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="-180">
+              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding>
+                <element signature="docComment;class#MinPriorityQueue#0" expanded="true" />
                 <element signature="e#289#361#0" expanded="true" />
                 <element signature="docComment;method#MinPriorityQueue#0;class#MinPriorityQueue#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
                 <element signature="method#enqueue#0;class#MinPriorityQueue#0" expanded="true" />
                 <element signature="method#dequeue#0;class#MinPriorityQueue#0" expanded="true" />
                 <element signature="method#isEmpty#0;class#MinPriorityQueue#0" expanded="true" />
@@ -107,7 +107,7 @@
       <file leaf-file-name="HeapPQStudentTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HeapPQStudentTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
+            <state relative-caret-position="546">
               <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="method#testHeap#0;class#HeapPQStudentTests#0" expanded="true" />
@@ -119,7 +119,7 @@
       <file leaf-file-name="TGreggMinHeapTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TGreggMinHeapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
+            <state relative-caret-position="294">
               <caret line="4820" column="1" lean-forward="false" selection-start-line="4820" selection-start-column="1" selection-end-line="4820" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/HeapPQStudentTests.java" />
         <option value="$PROJECT_DIR$/src/TGreggMinHeapTest.java" />
         <option value="$PROJECT_DIR$/src/RuixuanHeapPQTest.java" />
-        <option value="$PROJECT_DIR$/src/MinPriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/MinHeap.java" />
+        <option value="$PROJECT_DIR$/src/MinPriorityQueue.java" />
       </list>
     </option>
   </component>
@@ -435,15 +435,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HeapPQStudentTests - 2017.09.29 at 13h 00m 53s.xml">
-      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeapPQStudentTests - 2017.09.29 at 13h 03m 57s.xml">
-      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeapPQStudentTests - 2017.09.29 at 13h 04m 07s.xml">
-      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HeapPQStudentTests - 2017.09.29 at 13h 05m 25s.xml">
       <configuration name="HeapPQStudentTests" configurationId="JUnit" />
     </history-entry>
@@ -451,6 +442,15 @@
       <configuration name="HeapPQStudentTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HeapPQStudentTests - 2017.09.29 at 13h 16m 51s.xml">
+      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapPQStudentTests - 2017.09.29 at 17h 15m 44s.xml">
+      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapPQStudentTests - 2017.09.29 at 17h 15m 58s.xml">
+      <configuration name="HeapPQStudentTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeapPQStudentTests - 2017.09.29 at 17h 18m 36s.xml">
       <configuration name="HeapPQStudentTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RuixuanHeapPQTest - 2017.09.29 at 13h 01m 41s.xml">
@@ -477,9 +477,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33834586" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32592592" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32585597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -521,11 +521,7 @@
             <element signature="e#311#383#0" expanded="true" />
             <element signature="docComment;method#MinHeap#0;class#MinHeap#0" expanded="true" />
             <element signature="method#MinHeap#0;class#MinHeap#0" expanded="true" />
-            <element signature="e#1354#1383#0" expanded="true" />
-            <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-            <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-            <element signature="method#remove#0;class#MinHeap#0" expanded="true" />
-            <element signature="e#3197#3231#0" expanded="true" />
+            <element signature="method#add#0;class#MinHeap#0" expanded="true" />
             <element signature="method#isEmpty#0;class#MinHeap#0" expanded="true" />
             <element signature="method#size#0;class#MinHeap#0" expanded="true" />
             <element signature="method#clear#0;class#MinHeap#0" expanded="true" />
@@ -540,7 +536,131 @@
             <element signature="method#checkToResize#0;class#MinHeap#0" expanded="true" />
             <element signature="docComment;method#addToFront#0;class#MinHeap#0" expanded="true" />
             <element signature="method#addToFront#0;class#MinHeap#0" expanded="true" />
-            <marker date="1506705600329" expanded="true" signature="938:1343" ph="..." />
+            <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#getTop#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#getTop#0;class#MinHeap#0" expanded="true" />
+            <marker date="1506719914729" expanded="true" signature="936:1353" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MinPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="e#289#361#0" expanded="true" />
+            <element signature="docComment;method#MinPriorityQueue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#enqueue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#dequeue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#isEmpty#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#size#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#getBackingHeap#0;class#MinPriorityQueue#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PriorityQueueInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#enqueue#0;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#dequeue#0;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#isEmpty#0;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#size#0;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#clear#0;class#PriorityQueueInterface#0" expanded="true" />
+            <element signature="docComment;method#getBackingHeap#0;class#PriorityQueueInterface#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeapInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;method#add#0;class#HeapInterface#0" expanded="true" />
+            <element signature="docComment;method#remove#0;class#HeapInterface#0" expanded="true" />
+            <element signature="docComment;method#isEmpty#0;class#HeapInterface#0" expanded="true" />
+            <element signature="docComment;method#size#0;class#HeapInterface#0" expanded="true" />
+            <element signature="docComment;method#clear#0;class#HeapInterface#0" expanded="true" />
+            <element signature="docComment;method#getBackingArray#0;class#HeapInterface#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HeapPQStudentTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="method#testHeap#0;class#HeapPQStudentTests#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TGreggMinHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101220">
+          <caret line="4820" column="1" lean-forward="false" selection-start-line="4820" selection-start-column="1" selection-end-line="4820" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#TGreggMinHeapTest#0" expanded="true" />
+            <element signature="method#setUp#0;class#TGreggMinHeapTest#0" expanded="true" />
+            <element signature="method#testHeap#0;class#TGreggMinHeapTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RuixuanHeapPQTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="157" column="37" lean-forward="false" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#RuixuanHeapPQTest#0" expanded="true" />
+            <element signature="method#setUp#0;class#RuixuanHeapPQTest#0" expanded="true" />
+            <element signature="method#testHeapSpecial#0;class#RuixuanHeapPQTest#0" expanded="true" />
+            <element signature="method#testHeapNormal#0;class#RuixuanHeapPQTest#0" expanded="true" />
+            <element signature="method#testHeapResize#0;class#RuixuanHeapPQTest#0" expanded="true" />
+            <element signature="method#testResize#0;class#RuixuanHeapPQTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MinHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MinHeap#0" expanded="true" />
+            <element signature="e#311#383#0" expanded="true" />
+            <element signature="docComment;method#MinHeap#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#MinHeap#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#add#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#isEmpty#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#size#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#clear#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#getBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#checkIllegalArgumentException#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#checkIllegalArgumentException#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#checkNoSuchElementException#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#checkNoSuchElementException#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#intialStepsBeforeRemove#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#intialStepsBeforeRemove#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#checkToResize#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#checkToResize#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#addToFront#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#addToFront#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#getTop#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#getTop#0;class#MinHeap#0" expanded="true" />
+            <marker date="1506719914729" expanded="true" signature="936:1353" ph="..." />
           </folding>
         </state>
       </provider>
@@ -550,10 +670,9 @@
         <state relative-caret-position="231">
           <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
+            <element signature="docComment;class#MinPriorityQueue#0" expanded="true" />
             <element signature="e#289#361#0" expanded="true" />
             <element signature="docComment;method#MinPriorityQueue#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
             <element signature="method#enqueue#0;class#MinPriorityQueue#0" expanded="true" />
             <element signature="method#dequeue#0;class#MinPriorityQueue#0" expanded="true" />
             <element signature="method#isEmpty#0;class#MinPriorityQueue#0" expanded="true" />
@@ -608,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5565">
           <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HeapPQStudentTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
+        <state relative-caret-position="546">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="method#testHeap#0;class#HeapPQStudentTests#0" expanded="true" />
@@ -713,27 +830,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MinPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#289#361#0" expanded="true" />
-            <element signature="docComment;method#MinPriorityQueue#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="method#enqueue#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="method#dequeue#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="method#isEmpty#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="method#size#0;class#MinPriorityQueue#0" expanded="true" />
-            <element signature="method#getBackingHeap#0;class#MinPriorityQueue#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TGreggMinHeapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
+        <state relative-caret-position="294">
           <caret line="4820" column="1" lean-forward="false" selection-start-line="4820" selection-start-column="1" selection-end-line="4820" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -744,20 +843,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MinPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="e#289#361#0" expanded="true" />
+            <element signature="docComment;method#MinPriorityQueue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#enqueue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#dequeue#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#isEmpty#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#size#0;class#MinPriorityQueue#0" expanded="true" />
+            <element signature="method#getBackingHeap#0;class#MinPriorityQueue#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MinHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1261">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="420">
+          <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
           <folding>
             <element signature="docComment;class#MinHeap#0" expanded="true" />
             <element signature="e#311#383#0" expanded="true" />
             <element signature="docComment;method#MinHeap#0;class#MinHeap#0" expanded="true" />
             <element signature="method#MinHeap#0;class#MinHeap#0" expanded="true" />
-            <element signature="e#1354#1383#0" expanded="true" />
-            <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-            <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
-            <element signature="method#remove#0;class#MinHeap#0" expanded="true" />
-            <element signature="e#3197#3231#0" expanded="true" />
+            <element signature="method#add#0;class#MinHeap#0" expanded="true" />
             <element signature="method#isEmpty#0;class#MinHeap#0" expanded="true" />
             <element signature="method#size#0;class#MinHeap#0" expanded="true" />
             <element signature="method#clear#0;class#MinHeap#0" expanded="true" />
@@ -772,7 +884,11 @@
             <element signature="method#checkToResize#0;class#MinHeap#0" expanded="true" />
             <element signature="docComment;method#addToFront#0;class#MinHeap#0" expanded="true" />
             <element signature="method#addToFront#0;class#MinHeap#0" expanded="true" />
-            <marker date="1506705600329" expanded="true" signature="938:1343" ph="..." />
+            <element signature="docComment;method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#resizeBackingArray#0;class#MinHeap#0" expanded="true" />
+            <element signature="docComment;method#getTop#0;class#MinHeap#0" expanded="true" />
+            <element signature="method#getTop#0;class#MinHeap#0" expanded="true" />
+            <marker date="1506719914729" expanded="true" signature="936:1353" ph="..." />
           </folding>
         </state>
       </provider>
