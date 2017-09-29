@@ -1,10 +1,10 @@
 /**
  * Your implementation of a min priority queue.
  * 
- * @author YOUR NAME HERE
- * @userid YOUR USER ID HERE (i.e. gburdell3)
- * @GTID YOUR GT ID HERE (i.e. 900000000)
- * @version 1.0
+ * @author Ahmed Gedi
+ * @userid agedi3
+ * @GTID 903197142
+ * @version 1.44
  */
 public class MinPriorityQueue<T extends Comparable<? super T>>
     implements PriorityQueueInterface<T> {
@@ -17,17 +17,21 @@ public class MinPriorityQueue<T extends Comparable<? super T>>
      * Creates a priority queue.
      */
     public MinPriorityQueue() {
-
+        backingHeap = new MinHeap<T>();
     }
 
     @Override
     public void enqueue(T item) {
-
+        if (item == null) {
+            throw new IllegalArgumentException("Item is null");
+        }
+        backingHeap.add(item);
     }
 
     @Override
     public T dequeue() {
-
+        T val = backingHeap.remove();
+        return val;
     }
 
     @Override
@@ -44,7 +48,7 @@ public class MinPriorityQueue<T extends Comparable<? super T>>
 
     @Override
     public void clear() {
-
+        backingHeap.clear();
     }
 
     @Override
